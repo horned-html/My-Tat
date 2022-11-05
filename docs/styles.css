@@ -1,0 +1,28 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+}
+h1 {
+    font-size: 60px;
+}
+
+.title {
+    text-align: center;
+    font-family: BoldTitle;
+}
+.body {
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: BodyText;
+}
+
+@font-face {
+    font-family: BoldTitle;
+    src: url(/Caskaydia\ Cove\ Nerd\ Font\ Complete\ Mono\ Windows\ Compatible\ Italic.otf);
+}
+@font-face {
+    font-family: BodyText;
+    src: url(/Caskaydia\ Cove\ Nerd\ Font\ Complete\ Windows\ Compatible\ Light.otf);
+}

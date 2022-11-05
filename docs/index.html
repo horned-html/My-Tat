@@ -2,32 +2,17 @@
 <html lang="">
   <head>
     <meta charset="utf-8">
-    <title>Client-side Redirection Demo</title>
+    <title>Amber's QR Code!</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
 
-  <script>
-    // List of locations to redirect to
-    const locations = [
-      'https://gooch.dev',
-    ];
-
-    // Pick a random location from the list and redirect to it
-
-    const randomLocation = locations[Math.floor(Math.random() * locations.length)];
-    window.location = randomLocation;
-  </script>
-
-  <body>  
-    <h1>Redirecting...</h1>
-    <p>This page requires JavaScript to work correctly.</p>
+  <body>
+    <div class="title">
+      <h1>You have scanned my body.</h1>
+      <h2>Congratulations. Have a secret.</h2>
+    </div>
+    <div class="body">
+      <p>There is nothing to see here yet. Come back when you're a little... mmm... richer.</p>
+    </div>
   </body>
-
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: sans-serif;
-      text-align: center;
-    }
-  </style>
 </html>

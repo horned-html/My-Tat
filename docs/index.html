@@ -1,6 +1,27 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Client-side Redirection Demo</title>
+  </head>
+
   <script>
-    window.location = "wikipedia.org"
+    // List of locations to redirect to
+    const locations = [
+      'https://gooch.dev',
+    ];
+
+    // Pick a random location from the list and redirect to it
+
+    const randomLocation = locations[Math.floor(Math.random() * locations.length)];
+    window.location = randomLocation;
   </script>
+
+  <body>  
+    <h1>Redirecting...</h1>
+    <p>This page requires JavaScript to work correctly.</p>
+  </body>
+
   <style>
     body {
       background-color: #000;
@@ -9,3 +30,4 @@
       text-align: center;
     }
   </style>
+</html>

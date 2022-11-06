@@ -17,9 +17,7 @@ video {
     font-family: BoldTitle;
 }
 .body {
-    /* margin-top: 50px;
-    margin-left: 10%;
-    margin-right: 10%; */
+    margin-top: 50px;
     font-family: BodyText;
     text-align: center;
 }

@@ -2,6 +2,7 @@ body {
     background-color: #000;
     color: #fff;
     font-family: sans-serif;
+    background-image: url(/qr.png);
 }
 h1 {
     font-size: 60px;
@@ -16,6 +17,12 @@ h1 {
     margin-left: 10%;
     margin-right: 10%;
     font-family: BodyText;
+}
+.content {
+    width: fit-content;
+    background-color: #000;
+    margin: auto;
+    padding: 30px;
 }
 
 @font-face {

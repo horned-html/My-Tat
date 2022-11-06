@@ -5,7 +5,11 @@ body {
     background-image: url(/qr.png);
 }
 h1 {
+    margin: auto;
     font-size: 60px;
+}
+video {
+    width: 40%;
 }
 
 .title {
@@ -13,16 +17,20 @@ h1 {
     font-family: BoldTitle;
 }
 .body {
-    margin-top: 50px;
+    /* margin-top: 50px;
     margin-left: 10%;
-    margin-right: 10%;
+    margin-right: 10%; */
     font-family: BodyText;
+    text-align: center;
 }
 .content {
     width: fit-content;
     background-color: #000;
     margin: auto;
     padding: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
 }
 
 @font-face {

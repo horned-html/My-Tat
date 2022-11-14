@@ -6,6 +6,9 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
   </head>
   <body>
+    <p class="credit">
+      Hosted using GitHub pages. Source code available <a href="https://github.com/horned-html/My-Tat">here</a>
+    </p>
     <div class="content">
       <div class="title">
         <h1>You have scanned my body.</h1>
@@ -38,11 +41,6 @@
           <p>Some fresh meat... Maybe a little too fresh.</p>
         </div>
       </div>
-      <p class="credit">
-        Website coded by the person in which this QR code is tattooed upon.<br>
-        If it seems that this QR code is tattoed on the wrong person, please contact me and we will fight to the death. <br>
-        Hosted using GitHub pages. Source code available <a href="https://github.com/horned-html/My-Tat">here</a>
-      </p>
     </div>
   </body>
   <style>
@@ -95,10 +93,13 @@
     }
     .credit {
       color: #999;
-      padding: 5px;
       font-family: monospace;
       font-size: 20px;
       letter-spacing: 3px;
+      float: right;
+      writing-mode: vertical-rl;
+      text-align: right;
+      height: 100%;
     }
 
     @font-face {

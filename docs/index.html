@@ -14,7 +14,7 @@
         <h1>You have scanned my body.</h1>
         <h2>Congratulations. Have a secret.</h2>
       </div>
-      <div class="stats">
+      <div class="stats" style="text-align: center;">
         <h2>Stats:</h2>
         <p>
           Name: Amber<br>
@@ -64,6 +64,7 @@
       position: relative;
     }
     h1 {
+      font-family: BoldTitle;
       margin: auto;
       font-size: 80px;
     }
@@ -72,6 +73,7 @@
       font-size: 40px;
     }
     p {
+      font-family: BodyText;
       font-size: 30px;
     }
     a {
@@ -80,14 +82,12 @@
 
     .title {
       text-align: center;
-      font-family: BoldTitle;
     }
     .stats {
       background-color: #222;
       text-align: left;
       padding: 10px 30px 10px 30px;
-      margin: 10px 10% 10px 10%;
-      font-family: BodyText;
+      margin: 10px 5% 10px 5%;
       border-radius: 5px;
     }
     .body {
@@ -125,8 +125,8 @@
     }
 
     @keyframes fadein {
-      0%{opacity: 0; top: 20px; transform: scale(0.9);}
-      100%{opacity: 100; top: 0px; transform: scale(1);}
+      0%{opacity: 0; top: 20px;}
+      100%{opacity: 100; top: 0px;}
     }
   </style>
 </html>

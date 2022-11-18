@@ -28,11 +28,11 @@
         <p>While you're here, check out some things I made.</p>
         <div class="art">
           <h2>Explore the funderground!</h2>
-          <video autoplay controls width="60%">
+          <video autoplay controls class="artentry" style="width: 60%;">
             <source src="/0001-0400.mp4" type="video/mp4">
             Hey for some wacky reasong you're reading this. That's a bad thing. :)
           </video>
-          <p>
+          <p class="desc">
             This is a little render I made in blender. 
             Fan art for the <a href="https://www.mysteryfleshpitnationalpark.com/">Mystery Flesh Pit</a>.
             Rendered in eevee.
@@ -40,11 +40,11 @@
         </div>
         <div class="art">
           <h2>Flesh</h2>
-          <video autoplay controls loop width="40%">
+          <video autoplay controls loop class="artentry" style="width: 50%;">
             <source src="/flesh0001-0250.mp4" type="video/mp4">
             Please make sure that you're using HTML5 or something.
           </video>
-          <p>
+          <p class="desc">
             Some fresh meat... Maybe a little too fresh. 
             Also made in blender. Rendered in cycles.
           </p>
@@ -103,6 +103,9 @@
       font-family: BodyText;
       text-align: center;
     }
+    .desc {
+      text-align: left;
+    }
     .content {
       width: fit-content;
       background-color: #000;
@@ -113,6 +116,14 @@
     }
     .art {
       margin: 60px 0px 60px 0px;
+      overflow: auto;
+    }
+    .artentry {
+      padding: 10px;
+      float: left;
+      /* width: 50%; */
+      display: block;
+      overflow: auto;
     }
     .credit {
       color: #999;

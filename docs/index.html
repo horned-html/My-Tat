@@ -15,6 +15,11 @@
         <h1>You have scanned my body.</h1>
         <h2>Congratulations. Have a secret.</h2>
       </div>
+      <ul class="topnav">
+        <li>
+          <a href="/about/" class="button">whatever you do, don't click me.</a>
+        </li>
+      </ul>
       <div class="stats" style="text-align: center;">
         <h2>Stats:</h2>
         <p>
@@ -132,6 +137,21 @@
       float: right;
       writing-mode: vertical-rl;
       margin: 0 5px 0 5px;
+    }
+    .button {
+      font-family: BodyText;
+      font-size: 25px;
+      background-color: #222;
+      border-radius: 10px;
+      padding: 10px;
+      text-decoration: none;
+    }
+    .topnav {
+      padding: 20px;
+      text-align: center;
+    }
+    .topnav li {
+      display: inline-block;
     }
 
     @font-face {

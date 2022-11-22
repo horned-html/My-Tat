@@ -34,9 +34,9 @@
       font-family: sans-serif;
       background-image: url(/qr.png);
       padding-bottom: 50px;
-      animation-name: fadein;
+      animation-name: spin;
       animation-duration: 1s;
-      animation-timing-function: ease;
+      animation-timing-function: cubic-bezier(.12,.79,.01,.99);
       position: relative;
     }
     h1 {
@@ -111,9 +111,9 @@
       src: url(/Caskaydia\ Cove\ Nerd\ Font\ Complete\ Windows\ Compatible\ Light.otf);
     }
 
-    @keyframes fadein {
-      0%{opacity: 0; top: 20px;}
-      100%{opacity: 100; top: 0px;}
+    @keyframes spin {
+      0%{transform: rotate(12345deg); opacity: 0%;}
+      100%{transform: rotate(0deg); opacity: 100%;}
     }
   </style>
 </html>

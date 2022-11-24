@@ -54,7 +54,7 @@ a {
 }
 .artentry {
     padding: 20px;
-    float: left;
+    float: right;
     overflow: auto;
 }
 .credit {

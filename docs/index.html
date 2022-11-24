@@ -45,13 +45,24 @@
         </div>
         <div class="art">
           <h2>Flesh</h2>
-          <video autoplay controls loop class="artentry" style="width: 50%;">
+          <video autoplay controls loop class="artentry" style="width: 45%;">
             <source src="/flesh0001-0250.mp4" type="video/mp4">
             Please make sure that you're using HTML5 or something.
           </video>
           <p class="desc">
-            Some fresh meat... Maybe a little too fresh. 
+            Some fresh meat... Maybe a little <i>too</i> fresh. 
             Also made in blender. Rendered in cycles.
+          </p>
+        </div>
+        <div class="art">
+          <h2>Wool... so soft...</h2>
+          <video autoplay controls loop class="artentry" style="width: 50%;">
+            <source src="/wool.mp4" type="video/mp4">
+            Your videos are not loading correctly.
+          </video>
+          <p class="desc">
+            Made this to test out the hair system in blender to try and get it to make some nice <i>satisfying</i> wool.
+            Rendered in cycles.
           </p>
         </div>
       </div>
@@ -109,6 +120,7 @@
     }
     .desc {
       text-align: left;
+      padding: 20px;
     }
     .content {
       width: fit-content;
@@ -124,7 +136,7 @@
       overflow: auto;
     }
     .artentry {
-      padding: 10px;
+      padding: 20px;
       float: left;
       overflow: auto;
     }

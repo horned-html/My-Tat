@@ -94,6 +94,14 @@ a {
     animation-timing-function: ease;
     position: relative;
 }
+.para {
+    text-align: left;
+}
+.disclaimer {
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 2px rgb(79, 0, 0);
+}
 
 @font-face {
     font-family: BoldTitle;

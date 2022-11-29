@@ -98,7 +98,7 @@ a {
     text-align: left;
 }
 .disclaimer {
-    padding: 0 50px 0 50px;
+    padding: 50px 50px 0 50px;
     font-size: 20px;
     color: rgb(255, 0, 0);
     text-shadow: 2px 2px 2px rgb(79, 0, 0);

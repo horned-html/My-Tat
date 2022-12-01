@@ -103,6 +103,18 @@ a {
     color: rgb(255, 0, 0);
     text-shadow: 2px 2px 2px rgb(79, 0, 0);
 }
+.intro {
+    position: absolute;
+    animation-name: intro;
+    animation-duration: 1.5s;
+    width: 50%;
+    margin-left: 25%;
+    opacity: 0%;
+    border-radius: 40px;
+    box-shadow: 0px 0px 50px black;
+    visibility: hidden;
+
+}
 
 @font-face {
     font-family: BoldTitle;
@@ -120,4 +132,9 @@ a {
 @keyframes spin {
     0%{transform: rotate(453deg);}
     100%{transform: rotate(0deg);}
+}
+@keyframes intro {
+    0%{transform: perspective(500px) rotateX(45deg) rotateY(45deg); opacity: 100%; visibility: visible;}
+    50%{transform: perspective(500px) rotateX(0deg) rotateY(0deg); opacity: 100%; visibility: visible;}
+    100%{opacity: 0%; visibility: hidden;}
 }

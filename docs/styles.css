@@ -84,7 +84,7 @@ a {
 }
 .fadein {
     animation-name: fadein;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-timing-function: ease;
     position: relative;
 }
@@ -111,9 +111,11 @@ a {
     margin-left: 25%;
     opacity: 0%;
     border-radius: 40px;
-    box-shadow: 0px 0px 50px black;
+    box-shadow: 0px 0px 50px #43260a;
     visibility: hidden;
-
+    image-rendering: pixelated;
+    filter: brightness(200%);
+    z-index: 1;
 }
 
 @font-face {

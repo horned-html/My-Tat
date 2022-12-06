@@ -47,6 +47,10 @@ a {
     border-radius: 30px;
     padding-bottom: 60px;
     box-shadow: 0 0 20px #111;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    position: relative;
 }
 .art {
     margin: 60px 0px 60px 0px;
@@ -82,12 +86,6 @@ a {
 .topnav li {
     display: inline-block; 
 }
-.fadein {
-    animation-name: fadein;
-    animation-duration: 1.5s;
-    animation-timing-function: ease;
-    position: relative;
-}
 .spin {
     animation-name: spin;
     animation-duration: 1s;
@@ -106,12 +104,12 @@ a {
 .intro {
     position: absolute;
     animation-name: intro;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     width: 50%;
     margin-left: 25%;
     opacity: 0%;
     border-radius: 40px;
-    box-shadow: 0px 0px 50px #43260a;
+    box-shadow: 0px 0px 50px #574114;
     visibility: hidden;
     image-rendering: pixelated;
     filter: brightness(200%);
@@ -129,6 +127,7 @@ a {
 
 @keyframes fadein {
     0%{opacity: 0; top: 20px;}
+    70%{opacity: 0; top: 20px;}
     100%{opacity: 100; top: 0px;}
 }
 @keyframes spin {
@@ -136,7 +135,7 @@ a {
     100%{transform: rotate(0deg);}
 }
 @keyframes intro {
-    0%{transform: perspective(500px) rotateX(45deg) rotateY(45deg); opacity: 100%; visibility: visible;}
-    50%{transform: perspective(500px) rotateX(0deg) rotateY(0deg); opacity: 100%; visibility: visible;}
+    0%{transform: perspective(1000px) rotateX(25deg) rotateY(45deg); opacity: 0%; visibility: visible;}
+    70%{transform: perspective(1000px) rotateX(0deg) rotateY(0deg); opacity: 100%; visibility: visible;}
     100%{opacity: 0%; visibility: hidden;}
 }

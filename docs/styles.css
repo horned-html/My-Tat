@@ -131,10 +131,6 @@ a {
     70%{opacity: 0; top: 20px;}
     100%{opacity: 100; top: 0px;}
 }
-@keyframes spin {
-    0%{transform: rotate(453deg);}
-    100%{transform: rotate(0deg);}
-}
 @keyframes intro {
     0%{transform: perspective(1000px) rotateX(25deg) rotateY(45deg); opacity: 0%; visibility: visible;}
     70%{transform: perspective(1000px) rotateX(0deg) rotateY(0deg); opacity: 100%; visibility: visible;}

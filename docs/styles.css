@@ -105,8 +105,9 @@ a {
     position: absolute;
     animation-name: intro;
     animation-duration: 1s;
-    width: 50%;
-    margin-left: 25%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30%;
     opacity: 0%;
     border-radius: 40px;
     box-shadow: 0px 0px 50px #574114;

@@ -48,7 +48,7 @@ a {
     padding-bottom: 60px;
     box-shadow: 0 0 20px #111;
     animation-name: fadein;
-    animation-duration: 1s;
+    animation-duration: 0.75s;
     animation-timing-function: ease;
     position: relative;
 }
@@ -86,12 +86,6 @@ a {
 .topnav li {
     display: inline-block; 
 }
-.spin {
-    animation-name: spin;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    position: relative;
-}
 .para {
     text-align: left;
 }
@@ -104,7 +98,7 @@ a {
 .intro {
     position: absolute;
     animation-name: intro;
-    animation-duration: 1s;
+    animation-duration: 0.75s;
     width: 80%;
     margin-left: 10%;
     margin-top: 30%;

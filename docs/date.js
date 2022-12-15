@@ -1,4 +1,4 @@
-const dateTat = new Date("1977-11-15"); // This will be the date when I get the tattoo. For now it's just a placeholder.
+const dateTat = new Date("2004-1-19"); // This will be the date when I get the tattoo. For now it's just a placeholder.
 const dateElement = document.getElementById("date");
 
 var dateNow = new Date(); 
@@ -8,24 +8,21 @@ var months = dateDiff.getMonth();
 var days = dateDiff.getDate() - 1;
 var dateString;
 
-let time = []
+// Gart's code
+let time = ""
 var yearUnit = `year${years > 1 ? "s" : ""},`;
 var monthUnit = `month${months > 1 ? "s" : ""},`;
 var dayUnit =  `day${days > 1 ? "s" : ""},`;
-if (years > 0) time.push(`${years} ${yearUnit} `);
-if (months > 0) time.push(`${months} ${monthUnit} `);
-if (days > 0) time.push(`${days} ${dayUnit} `);
 
+if (years > 0) time += `${years} ${yearUnit} `;
+if (months > 0) time += `${months} ${monthUnit} `;
+if (days > 0) time += `${days} ${dayUnit} `;
+
+if (time.length > 0 && time.includes(",")) time = time.substring(0, time.lastIndexOf(","));
+let itemCount = [years > 0, months > 0, days > 0].reduce((a, b) => a + b, 0);
+if (time.length > 0 && time.includes(",")) time = time.substring(0, time.lastIndexOf(",")) + `${itemCount === 3 ? "," : ""} and` + time.substring(time.lastIndexOf(",") + 1);
 if (time.length === 0) time = "0 seconds";
-if (time.length === 1) time = time[0];
-if (time.length === 2) time = time.join(" and ");
-if (time.length > 2) {
-    time[time.length - 1] = `and ${time[time.length - 1]}`;
-    time = time.join(", ");
-}
+// end of Gart's code
 
-console.log(time);
-
-dateString = `This tattoo is ${time} old`
-
+dateString = `This tattoo is ${time} old`;
 dateElement.innerHTML = dateString;

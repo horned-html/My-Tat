@@ -90,7 +90,7 @@ a {
     text-align: left;
 }
 .disclaimer {
-    padding: 50px 50px 0 50px;
+    padding: 0px 50px 0 50px;
     font-size: 20px;
     color: rgb(255, 0, 0);
     text-shadow: 2px 2px 2px rgb(79, 0, 0);
@@ -109,6 +109,12 @@ a {
     image-rendering: pixelated;
     filter: brightness(200%);
     z-index: 1;
+}
+#date {
+    font-size: 40px;
+    width: 80%;
+    padding: 20px;
+    margin: auto;
 }
 
 @font-face {

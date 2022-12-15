@@ -1,4 +1,4 @@
-const dateTat = new Date("2004-1-19"); // This will be the date when I get the tattoo. For now it's just a placeholder.
+const dateTat = new Date("2012-1-19"); // This will be the date when I get the tattoo. For now it's just a placeholder.
 const dateElement = document.getElementById("date");
 
 var dateNow = new Date(); 

@@ -8,7 +8,7 @@ var months = dateDiff.getMonth();
 var days = dateDiff.getDate() - 1;
 var dateString;
 
-// Gart's code
+// Gart's code ( gurrrrrrett3 )
 let time = ""
 var yearUnit = `year${years > 1 ? "s" : ""},`;
 var monthUnit = `month${months > 1 ? "s" : ""},`;

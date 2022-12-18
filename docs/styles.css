@@ -86,6 +86,9 @@ a {
 .topnav li {
     display: inline-block; 
 }
+.linky {
+    font-size: 50px;
+}
 .para {
     padding: 5px;
     text-align: left;

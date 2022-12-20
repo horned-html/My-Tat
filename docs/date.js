@@ -1,4 +1,4 @@
-const dateTat = new Date(525196800000); // This will be the date when I get the tattoo. For now it's just a placeholder.
+const dateTat = new Date(1671816600000); // This will be the date when I get the tattoo. For now it's just a placeholder.
 const dateElement = document.getElementById("date");
 
 var dateNow = new Date(); 
@@ -24,5 +24,10 @@ if (time.length > 0 && time.includes(",")) time = time.substring(0, time.lastInd
 if (time.length === 0) time = "0 seconds";
 // end of Gart's code
 
-dateString = `This tattoo is ${time} old`;
+if (dateNow > dateTat) {
+    dateString = `This tattoo is ${time} old`;
+}
+else {
+    dateString = "This tattoo hasn't been born yet. Please be patient.";
+}
 dateElement.innerHTML = dateString;

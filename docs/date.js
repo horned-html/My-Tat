@@ -23,7 +23,7 @@ let itemCount = [years > 0, months > 0, days > 0].reduce((a, b) => a + b, 0);
 if (time.length > 0 && time.includes(",")) time = time.substring(0, time.lastIndexOf(",")) + `${itemCount === 3 ? "," : ""} and` + time.substring(time.lastIndexOf(",") + 1);
 if (time.length === 0) time = "0 seconds";
 // end of Gart's code
-console.log(`${years} ${months} ${days}`)
+console.log(`${years} ${months} ${days}`);
 
 if (dateNow > dateTat) {
     dateString = `This tattoo is ${time} old`;

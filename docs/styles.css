@@ -1,20 +1,20 @@
 body {
     color: #fff;
-    font-family: BodyText;
+    font-family: BodyText, 'Courier New', Courier, monospace;
     background-image: url(/qr.png);
     padding-bottom: 50px;
 }
 h1 {
-    font-family: BoldTitle;
+    font-family: BoldTitle, 'Courier New', Courier, monospace;
     margin: auto;
     font-size: 80px;
 }
 h2 {
-    font-family: BoldTitle;
+    font-family: BoldTitle, 'Courier New', Courier, monospace;
     font-size: 50px;
 }
 p {
-    font-family: BodyText;
+    font-family: BodyText, 'Courier New', Courier, monospace;
     font-size: 40px;
 }
 a {

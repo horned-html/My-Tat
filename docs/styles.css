@@ -1,20 +1,19 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
 body {
     color: #fff;
-    font-family: BodyText, 'Courier New', Courier, monospace;
     background-image: url(/qr.png);
     padding-bottom: 50px;
 }
 h1 {
-    font-family: BoldTitle, 'Courier New', Courier, monospace;
     margin: auto;
     font-size: 80px;
 }
 h2 {
-    font-family: BoldTitle, 'Courier New', Courier, monospace;
     font-size: 50px;
 }
 p {
-    font-family: BodyText, 'Courier New', Courier, monospace;
     font-size: 40px;
 }
 a {
@@ -64,7 +63,6 @@ a {
 .credit {
     color: #999;
     text-shadow: 0 0 2px #000;
-    font-family: monospace;
     font-size: 20px;
     letter-spacing: 5px;
     float: right;

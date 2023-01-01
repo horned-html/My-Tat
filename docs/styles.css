@@ -1,5 +1,5 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier Prime', monospace;
 }
 body {
     color: #fff;
@@ -70,7 +70,6 @@ a {
     margin: 0 5px 0 5px;
 }
 .button {
-    font-family: BodyText;
     font-size: 35px;
     background-color: #222;
     border-radius: 10px;
@@ -112,6 +111,8 @@ a {
     padding: 20px;
     margin: auto;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
 @keyframes fadein {
     0%{opacity: 0; top: 20px;}

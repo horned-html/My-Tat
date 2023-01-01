@@ -113,15 +113,6 @@ a {
     margin: auto;
 }
 
-@font-face {
-    font-family: BoldTitle;
-    src: url(/Caskaydia\ Cove\ Nerd\ Font\ Complete\ Mono\ Windows\ Compatible\ Italic.otf);
-}
-@font-face {
-    font-family: BodyText;
-    src: url(/Caskaydia\ Cove\ Nerd\ Font\ Complete\ Windows\ Compatible\ Light.otf);
-}
-
 @keyframes fadein {
     0%{opacity: 0; top: 20px;}
     70%{opacity: 0; top: 20px;}

@@ -7,11 +7,14 @@ body {
     padding-bottom: 50px;
 }
 h1 {
+    /* Issue: fonts appear wider on ios? Only seems to affect bolded fonts */
     margin: auto;
     font-size: 80px;
+    font-style: italic;
 }
 h2 {
     font-size: 50px;
+    font-style: italic;
 }
 p {
     font-size: 40px;
@@ -105,6 +108,7 @@ a {
     filter: brightness(200%);
     z-index: 1;
 }
+
 #date {
     font-size: 40px;
     width: 80%;

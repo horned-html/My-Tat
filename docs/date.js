@@ -31,7 +31,7 @@ if (time.length === 0) time = "0 seconds";
 // ~~~ end of Gart's code ~~~
 
 if (dateNow > dateTat) {
-    dateString = `This tattoo is ${time} old`;
+    dateString = `This tattoo is ${time} old.`;
 }
 else {
     dateString = "It appears you are attempting to time travel again. Please stop it.";

@@ -15,17 +15,34 @@
     <script> 
       if (Math.random() < 0.01) { window.location = '/rickroll' }; // Randomly redirect to rickroll
     </script>
+    <script src="menu.js"></script>
+
+    <!-- the qr code that shows up on load -->
     <img class="intro" src="qr.png">
+
+    <!-- menu -->
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 60px;">&times;</a>
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+    </div>
+    
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+
+    <!-- main body -->
     <div class="content">
       <div class="title"> 
         <h1>You have scanned my body.</h1>
         <h2>Congratulations. Have a secret.</h2>
       </div>
-      <ul class="topnav">
+
+      <!-- outdated navigation menu -->
+      <!-- <ul class="topnav">
         <li>
           <a href="/about/" class="button">About</a>
         </li>
-      </ul>
+      </ul> -->
+
       <div class="stats" style="text-align: center;">
         <h2>Stats:</h2>
         <p>
@@ -34,6 +51,7 @@
           Gender: girl(other)<br>
         </p>
       </div>
+
       <div class="body">
         <p>While you're here, check out some things I made.</p>
         <div class="art">

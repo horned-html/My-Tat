@@ -13,16 +13,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <script src="../menu.js"></script>
+
+    <!-- qr code intro thingy :3 -->
     <img class="intro" src="../qr.png">
+
+    <!-- menu -->
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 60px;">&times;</a>
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+    </div>
+    
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+
     <div class="content">
       <div class="title">
         <h1>About me.</h1>
       </div>
-      <ul class="topnav">
+
+      <!-- old navi -->
+      <!-- <ul class="topnav">
         <li>
           <a href="/" class="button">go back.</a>
         </li>
-      </ul>
+      </ul> -->
       <div class="body">
         <p class="para">
           If you haven't figured it out by now, or if you forgot, my name is Amber <span style="color: #ffbf00">(#FFBF00)</span>. 

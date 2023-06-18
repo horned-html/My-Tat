@@ -15,16 +15,24 @@ finalResult = result.toFixed(0);
 for (let i = 2; i < finalResult; i++) {
     if (finalResult % i == 0) {
         divisibleNumbers.push(i);
-        // divisibleNumber = i;
-        // funFactText.innerHTML = "FUN FACT! Today's date is divisible by " + divisibleNumber + "!";
     }
 }
 
-if (divisibleNumbers.length > 1) {
-    funFactText.innerHTML = "FUN FACT! Today's date is divisible by ";
+if (divisibleNumbers.length > 0) {
+    factString = "FUN FACT! Today's date is divisible by ";
     for (let j = 0; j < divisibleNumbers.length; j++) {
-        funFactText.innerHTML += divisibleNumbers[j] + ", ";
+        if (j <= divisibleNumbers.length - 2) {
+            factString += divisibleNumbers[j] + ", ";
+        }
+        if (j == divisibleNumbers.length - 1) {
+            factString += "and " + divisibleNumbers[j] + "!";
+        }
     }
+    funFactText.innerHTML = factString;
 }
+else {
+    factString = "TODAY'S DATE IS PRIME! " + finalResult + "!!!";
+}
+
 console.log(finalResult);
 console.log(divisibleNumbers);

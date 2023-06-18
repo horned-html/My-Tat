@@ -25,7 +25,7 @@ if (divisibleNumbers.length > 0) {
             factString += divisibleNumbers[j] + ", ";
         }
         if (j == divisibleNumbers.length - 1) {
-            factString += "and " + divisibleNumbers[j] + "!";
+            factString += "and " + divisibleNumbers[j] + "!"; //adding different condition for last one
         }
     }
     funFactText.innerHTML = factString;

@@ -18,14 +18,23 @@
     <!-- qr code intro thingy :3 -->
     <img class="intro" src="../qr.png">
 
-    <!-- menu -->
-    <div id="mySidepanel" class="sidepanel">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="/">Home</a>
-      <a href="/about/">About</a>
-    </div>
-    
-    <button class="openbtn" onclick="openNav()">&#9776;</button>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="#home" class="active">
+        <img src="/logo.png">
+      </a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="../">Home</a>
+        <a href="/">About</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>   
 
     <div class="content">
       <div class="title">
@@ -46,7 +55,7 @@
         </p>
         <p id="date">Date:</p>
         <img src="../tumblr_34e6fd55d4c09fb4405c0795e82d0179_cf70d7df_400.gif">
-        <ul class="topnav">
+        <ul class="oldtopnav">
           <li class="linky">
             <a href="https://www.youtube.com/@amber.mp4" class="button fa fa-youtube-play"></a>
           </li>

@@ -57,6 +57,7 @@ a {
     animation-duration: 0.75s;
     animation-timing-function: ease;
     position: relative;
+    /* max-width: 1000px; */
 }
 .art {
     margin: 60px 0px 60px 0px;
@@ -82,11 +83,11 @@ a {
     padding: 10px;
     text-decoration: none;
 }
-.topnav {
+.oldtopnav {
     padding: 20px;
     text-align: center;
 }
-.topnav li {
+.oldtopnav li {
     display: inline-block; 
 }
 .linky {
@@ -111,60 +112,47 @@ a {
     filter: brightness(200%);
     z-index: 1;
 }
-/* The sidepanel menu */
-.sidepanel {
-    height: 250px; 
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed;
-    z-index: 2; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; 
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
-    border-radius: 15px;
-    box-shadow: 0px 0px 20px #fff;
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
 }
-/* The sidepanel links */
-.sidepanel a {
-    padding: 8px 8px 8px 32px;
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: white;
+    padding: 20px 30px;
     text-decoration: none;
-    font-size: 50px;
-    color: #818181;
+    font-size: 40px;
     display: block;
-    transition: 0.3s;
 }
-/* When you mouse over the navigation links, change their color */
-.sidepanel a:hover {
-    color: #f1f1f1; 
-}
-/* Position and style the close button (top right corner) */
-.sidepanel .closebtn {
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: black;
+    display: block;
     position: absolute;
+    right: 0;
     top: 0;
-    right: 25px;
-    font-size: 80px;
-    margin-left: 50px;
+    font-size: 90px;
 }
-/* Style the button that is used to open the sidepanel */
-.openbtn {
-    top: 0;
-    left: 0;
-    font-size: 60px;
-    cursor: pointer;
-    background-color: #222;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    position: fixed;
-    z-index: 1;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px #000;
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
 }
-.openbtn:hover {
-    background-color: #444;
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #2b2b2b;
+    color: white;
 } 
 
 #date {

@@ -161,8 +161,8 @@ a {
     position: fixed; /* Fixed/sticky position */
     bottom: 40px;
     right: 60px;
-    height: 80px;
-    width: 80px;
+    height: 160px;
+    width: 160px;
     z-index: 99;
     border: none;
     outline: none;
@@ -170,8 +170,8 @@ a {
     color: #000000; /* Text color */
     cursor: pointer;
     padding: 15px;
-    border-radius: 40px;
-    font-size: 50px; /* Increase font size */
+    border-radius: 80px;
+    font-size: 100px; /* Increase font size */
 }
 
 #date {

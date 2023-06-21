@@ -7,6 +7,7 @@ var result = 0;
 var finalResult = 0;
 var divisibleNumbers = [];
 var factString = "";
+var highlyDivisible = 20;
 
 presentDate = new Date();
 result = Math.round(presentDate.getTime() / (oneDay));
@@ -26,6 +27,9 @@ if (divisibleNumbers.length > 0) {
         }
         if (j == divisibleNumbers.length - 1) {
             factString += "and " + divisibleNumbers[j] + "!"; //adding different condition for last one
+            if (divisibleNumbers.length > highlyDivisible) {
+                factString += " Wow! That's a lot of numbers!"
+            }
         }
     }
     funFactText.innerHTML = factString;

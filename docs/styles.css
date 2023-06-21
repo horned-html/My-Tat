@@ -159,16 +159,18 @@ a {
 #topButton {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 20px;
-    right: 30px;
+    bottom: 40px;
+    right: 60px;
+    height: 80px;
+    width: 80px;
     z-index: 99;
     border: none;
     outline: none;
-    background-color: rgb(17, 17, 17); /* Set a background color */
-    color: #ffbf00; /* Text color */
+    background-color: #ffbf00; /* Set a background color */
+    color: #000000; /* Text color */
     cursor: pointer;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 40px;
     font-size: 50px; /* Increase font size */
 }
 

@@ -19,6 +19,7 @@ for (let i = 2; i < finalResult; i++) {
     }
 }
 
+// ok so i realize this algorithm is not efficient but it isn't slow so i'm keeping it
 if (divisibleNumbers.length > 0) {
     factString = "FUN FACT! Today's date is divisible by ";
     for (let j = 0; j < divisibleNumbers.length; j++) {
@@ -32,11 +33,13 @@ if (divisibleNumbers.length > 0) {
             }
         }
     }
-    funFactText.innerHTML = factString;
 }
 else {
     factString = "TODAY'S DATE IS PRIME! " + finalResult + "!!!";
 }
+funFactText.innerHTML = factString;
 
-console.log(finalResult);
-console.log(divisibleNumbers);
+// console.log(finalResult);
+// console.log(divisibleNumbers);
+
+// console.log(divisibleNumbers.length);

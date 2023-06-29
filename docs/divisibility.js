@@ -19,7 +19,7 @@ for (let i = 2; i < finalResult; i++) {
     }
 }
 
-if (divisibleNumbers.length > 0) {
+if (divisibleNumbers.length > 2) {
     factString = "FUN FACT! Today's date is divisible by ";
     for (let j = 0; j < divisibleNumbers.length; j++) {
         if (j <= divisibleNumbers.length - 2) {
@@ -28,14 +28,21 @@ if (divisibleNumbers.length > 0) {
         if (j == divisibleNumbers.length - 1) {
             factString += "and " + divisibleNumbers[j] + "!"; //adding different condition for last one
             if (divisibleNumbers.length > highlyDivisible) {
-                factString += " Wow! That's a lot of numbers!"
+                factString += " Wow! That's a lot of numbers!";
             }
         }
     }
 }
-else {
-    factString = "TODAY'S DATE IS PRIME! " + finalResult + "!!!";
+if (divisibleNumbers.length == 2) {
+    factString = `FUN FACT! Today's date is only divisible by ${divisibleNumbers[0]} and ${divisibleNumbers[1]}!`;
 }
+if (divisibleNumbers.length == 1) {
+    factString = `FUN FACT! Today's date is divisible by only one number! ${divisibleNumbers[0]}!`;
+}
+if (divisibleNumbers.length == 0) {
+    factString = `TODAY'S DATE IS PRIME! ${finalResult}!!!`;
+}
+
 funFactText.innerHTML = factString;
 
 // console.log(finalResult);

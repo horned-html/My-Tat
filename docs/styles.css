@@ -78,7 +78,8 @@ a {
 }
 .button {
     font-size: 35px;
-    background-color: #222;
+    background-color: #ffbf00;
+    color: #000;
     border-radius: 10px;
     padding: 10px;
     text-decoration: none;
@@ -155,6 +156,35 @@ a {
     background-color: #2b2b2b;
     color: white;
 } 
+
+.rainbowbackground {
+    /* completely evil hack to give multiple colored borders. there might be a better way but you're gonna have to find it. i already did all the hard copy and paste work */
+    box-shadow: 
+    5px 5px 0 #D52D00, 
+    -5px 5px 0 #D52D00, 
+    5px -5px 0 #D52D00, 
+    -5px -5px 0 #D52D00, 
+
+    10px 10px 0 #EF7627,
+    -10px 10px 0 #EF7627,
+    10px -10px 0 #EF7627,
+    -10px -10px 0 #EF7627,
+
+    15px 15px 0 #fff,
+    -15px 15px 0 #fff,
+    15px -15px 0 #fff,
+    -15px -15px 0 #fff,
+
+    20px 20px 0 #D162A4,
+    -20px 20px 0 #D162A4,
+    20px -20px 0 #D162A4,
+    -20px -20px 0 #D162A4,
+
+    25px 25px 0 #A30262,
+    -25px 25px 0 #A30262,
+    25px -25px 0 #A30262,
+    -25px -25px 0 #A30262;
+}
 
 #topButton {
     display: none; /* Hidden by default */

@@ -184,6 +184,8 @@ a {
     -25px 25px 0 #A30262,
     25px -25px 0 #A30262,
     -25px -25px 0 #A30262;
+
+    text-align: center;
 }
 
 #topButton {

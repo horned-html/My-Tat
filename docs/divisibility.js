@@ -54,6 +54,7 @@ funFactText.innerHTML = factString;
 // console.log(divisibleNumbers.length);
 
 function extremelyFunny() {
+    funnyString = "";
     for (let index = 0; index < finalResult; index++) {
         funnyString += "Sex! ";
     }

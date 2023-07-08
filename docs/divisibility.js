@@ -1,6 +1,7 @@
 // One day Time in ms (milliseconds)
 const oneDay = 1000 * 60 * 60 * 24;
 const funFactText = document.getElementById("funFact");
+var funnyElement;
 
 var presentDate = 0;
 var result = 0;
@@ -8,6 +9,8 @@ var finalResult = 0;
 var divisibleNumbers = [];
 var factString = "";
 var highlyDivisible = 20;
+
+var funnyString = "";
 
 presentDate = new Date();
 result = Math.round(presentDate.getTime() / (oneDay));
@@ -49,3 +52,11 @@ funFactText.innerHTML = factString;
 // console.log(divisibleNumbers);
 
 // console.log(divisibleNumbers.length);
+
+function extremelyFunny() {
+    for (let index = 0; index < finalResult; index++) {
+        funnyString += "Sex! ";
+    }
+    funnyElement = document.getElementById("funny");
+    funnyElement.innerHTML = funnyString;
+}

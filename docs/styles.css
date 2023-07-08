@@ -212,6 +212,9 @@ a {
     padding: 20px;
     margin: auto;
 }
+#funny {
+    font-size: 6px;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 

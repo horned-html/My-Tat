@@ -48,11 +48,6 @@ if (divisibleNumbers.length == 0) {
 
 funFactText.innerHTML = factString;
 
-// console.log(finalResult);
-// console.log(divisibleNumbers);
-
-// console.log(divisibleNumbers.length);
-
 function extremelyFunny() {
     funnyString = "";
     for (let index = 0; index < finalResult; index++) {
@@ -60,4 +55,9 @@ function extremelyFunny() {
     }
     funnyElement = document.getElementById("funny");
     funnyElement.innerHTML = funnyString;
+}
+
+// TODAY IS FRIDAY IN CALIFORNIA (randomly redirects to friday)
+if (presentDate.getDay() == 5) {
+    if (Math.random() < 0.01) { window.location = 'https://youtu.be/9WaYCdQ8FOQ' };
 }

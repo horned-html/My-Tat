@@ -56,8 +56,3 @@ function extremelyFunny() {
     funnyElement = document.getElementById("funny");
     funnyElement.innerHTML = funnyString;
 }
-
-// TODAY IS FRIDAY IN CALIFORNIA (randomly redirects to friday)
-if (presentDate.getDay() == 5) {
-    if (Math.random() < 0.01) { window.location = 'https://youtu.be/9WaYCdQ8FOQ' };
-}

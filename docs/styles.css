@@ -160,30 +160,30 @@ a {
 .rainbowbackground {
     /* completely evil hack to give multiple colored borders. there might be a better way but you're gonna have to find it. i already did all the hard copy and paste work */
     box-shadow: 
-    5px 5px 0 #D52D00, 
-    -5px 5px 0 #D52D00, 
-    5px -5px 0 #D52D00, 
-    -5px -5px 0 #D52D00, 
+    5px 5px 0 #5BCEFA, 
+    -5px 5px 0 #5BCEFA, 
+    5px -5px 0 #5BCEFA, 
+    -5px -5px 0 #5BCEFA, 
 
-    10px 10px 0 #EF7627,
-    -10px 10px 0 #EF7627,
-    10px -10px 0 #EF7627,
-    -10px -10px 0 #EF7627,
+    10px 10px 0 #F5A9B8,
+    -10px 10px 0 #F5A9B8,
+    10px -10px 0 #F5A9B8,
+    -10px -10px 0 #F5A9B8,
 
     15px 15px 0 #fff,
     -15px 15px 0 #fff,
     15px -15px 0 #fff,
     -15px -15px 0 #fff,
 
-    20px 20px 0 #D162A4,
-    -20px 20px 0 #D162A4,
-    20px -20px 0 #D162A4,
-    -20px -20px 0 #D162A4,
+    20px 20px 0 #F5A9B8,
+    -20px 20px 0 #F5A9B8,
+    20px -20px 0 #F5A9B8,
+    -20px -20px 0 #F5A9B8,
 
-    25px 25px 0 #A30262,
-    -25px 25px 0 #A30262,
-    25px -25px 0 #A30262,
-    -25px -25px 0 #A30262;
+    25px 25px 0 #5BCEFA,
+    -25px 25px 0 #5BCEFA,
+    25px -25px 0 #5BCEFA,
+    -25px -25px 0 #5BCEFA;
 
     text-align: center;
 }

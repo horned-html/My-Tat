@@ -1,4 +1,3 @@
-<!-- What the hell? You're reading my source code and didn't even bother giving me an anisthetic first?! It hurts!!!! Stop it!!!-->
 <!DOCTYPE html>
 <html lang="">
   <head>
@@ -13,9 +12,15 @@
   </head>
   <body>
     <script> 
-      if (Math.random() < 0.01) { window.location = '/rickroll' }; // Randomly redirect to rickroll
+      // if (Math.random() < 0.01) { window.location = '/rickroll' }; // Randomly redirect to rickroll
     </script>
     <script src="/menu.js"></script>
+    <script>
+      var currentDate = new Date();
+      if (currentDate.getMonth() === 5) {
+        window.location.href = '/pride'
+      }
+    </script>
     
     <!-- the qr code that shows up on load -->
     <img class="intro" src="qr.png">
@@ -32,7 +37,7 @@
       <div id="myLinks">
         <a href="/">Home</a>
         <a href="/about/">About</a>
-        <a href="/rickroll/">Rickroll</a>
+        <!-- <a href="/rickroll/">Rickroll</a> -->
         <a href="/cool-websites/">Cool Websites</a>
       </div>
       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
@@ -77,7 +82,6 @@
           <h2>Explore the funderground!</h2>
           <video autoplay controls class="artentry" style="width: 60%;">
             <source src="/0001-0400.mp4" type="video/mp4">
-            Hey for some wacky reasong you're reading this. That's a bad thing. :)
           </video>
           <p class="desc">
             This is a little scene I made in blender. 
@@ -89,7 +93,6 @@
           <h2>Flesh</h2>
           <video autoplay controls loop class="artentry" style="width: 45%;">
             <source src="/flesh0001-0250.mp4" type="video/mp4">
-            Please make sure that you're using HTML5 or something.
           </video>
           <p class="desc">
             Some fresh meat... Maybe a little <i>too</i> fresh. 
@@ -100,7 +103,6 @@
           <h2>Wool... so soft...</h2>
           <video autoplay controls loop class="artentry" style="width: 50%;">
             <source src="/wool.mp4" type="video/mp4">
-            Your videos are not loading correctly.
           </video>
           <p class="desc">
             Made this to test out the hair system in blender to try and get it to make some nice <i>satisfying</i> wool.
@@ -111,7 +113,6 @@
           <h2>Sentry go PEW</h2>
           <video autoplay controls loop class="artentry" style="width: 50%;">
             <source src="/sentry.mp4" type="video/mp4">
-            Guess what. broken vuideo.
           </video>
           <p class="desc">
             Using the sentry rig for blender by <a href="https://youtu.be/uN2vqnkHqFk" target="_blank">hisanimations</a> with a wacky fisheye lens!
@@ -122,7 +123,6 @@
           <h2>More fleshy...</h2>
           <video autoplay controls loop class="artentry" style="width: 60%;">
             <source src="/0001-0120.mp4" type="video/mp4">
-            fdsfasdfhaj
           </video>
           <p class="desc">
             An older render of some flesh.

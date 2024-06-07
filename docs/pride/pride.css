@@ -1,4 +1,11 @@
 body {
     color: white;
-    background-image: url(https://i.pinimg.com/originals/61/89/e7/6189e7aeb11c3483ea1d81202e1b89b8.gif);
+    text-align: center;
+    background-image: url(rainbow-glitter.gif);
+}
+
+.title {
+    padding: 10%;
+    /* text-align: center; */
+    text-shadow: 2px 2px 1px black;
 }
